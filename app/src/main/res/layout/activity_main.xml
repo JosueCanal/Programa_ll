@@ -22,7 +22,7 @@
         android:layout_marginTop="100dp"/>
 
     <TextView
-        android:id="@+id/Operador"
+        android:id="@+id/lblOperador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtnum2"
@@ -50,8 +50,8 @@
         android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Operador"
-        android:layout_marginTop="147dp"
+        android:layout_below="@+id/optOperadores"
+        android:layout_marginTop="40dp"
         android:text="Calcular" />
 
     <TextView
@@ -63,4 +63,54 @@
         android:layout_marginTop="40dp"
         android:text="Resultado:" />
 
+    <RadioGroup
+        android:id="@+id/optOperadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblOperador"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:id="@+id/opSuma"
+            android:text="Suma"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/opResta"
+            android:text="Resta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/opMulplicacion"
+            android:text="Multiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/opDivision"
+            android:text="Division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/opPorcentaje"
+            android:text="Porcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/opExponente"
+            android:text="Exponente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/opFactorial"
+            android:text="Factorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/opRaiz"
+            android:text="Raiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
 </RelativeLayout>
